@@ -11,9 +11,10 @@ data class UserLogin(val name: String? = null, val password: String? = null)
 
 object Users : Table() {
     val id = integer("id").autoIncrement()
-    val name = varchar("name", 255)
+    val name = varchar("name", 255).nullable()
     val email = varchar("email", 255)
-    val password = varchar("password", 255)
+    val password = varchar("password", 255).nullable()
+    val username = varchar("username", 255).nullable()
 
     override val primaryKey = PrimaryKey(id)
 }

@@ -37,6 +37,7 @@ dependencies {
     implementation("mysql:mysql-connector-java:8.0.25")
     implementation("org.mindrot:jbcrypt:0.4")
     implementation("io.jsonwebtoken:jjwt-api:0.11.2")
+    implementation("org.flywaydb:flyway-core:7.5.4")
     runtimeOnly("io.jsonwebtoken:jjwt-impl:0.11.2")
     runtimeOnly("io.jsonwebtoken:jjwt-jackson:0.11.2")
     implementation("io.ktor:ktor-server-status-pages:$ktor_version")
