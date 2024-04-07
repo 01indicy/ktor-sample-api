@@ -28,8 +28,7 @@ fun Route.userAuthRoutes(userService: UserService) {
                 return@post
             }
             call.respond(HttpStatusCode.OK, mapOf("token" to isUserAuthenticated))
-//            call.respond(HttpStatusCode.OK, mapOf("message" to "User Authenticated"))
-//            call.respondText("User Authenticated")
+
         }
     }
 }
